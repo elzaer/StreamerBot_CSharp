@@ -12,8 +12,10 @@ public class CPHInline
             string yourReplayPath = "V:\\";
             string yourOutputPath = "V:\\Clips\\";
             string yourFileFormat = "mkv"; // Set this to your chosen output format. Remember, you can remux MKV's to MP4's directly via OBS.
+            // Get the current date and time
+            DateTime currentDateTime = DateTime.Now;
             // Variables used in the routine
-            string fileNameInput = args["rawInput"].ToString(); // Name of the clip, which is used as the the new filename.
+            string fileNameInput = currentDateTime.ToString("yyyyMMdd_HHmmss"); // Generic timestamp for the clip to be downloaded - avoids input requirements.
             string clipUser = args["userName"].ToString(); // Triggering User for attribution
             // Set your ReplayBuffer FilePaths Here. Remember to double backslash for each directory.
             // If there's no input from the chatter, it won't save the clip.
