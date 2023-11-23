@@ -7,7 +7,11 @@ Collection of functionality extensions I've created for Streamer.bot written in 
 
 This leverages OBS Studio's ReplayBuffer feature to create high quality clips via a Streamer.bot sub-action. Using this function, your chat will be able to created clips directly from chat and their comment.
 
-```!clip Fancy name for a clip``` becomes ```Fancy name for a clip (clipped by HYP3RSTRIKE).mkv```
+EF - Made a small update so it was easier to strip out a clip without requiring a name.
+
+Should function with just using:
+
+```!clip``` should become ```yyyyMMdd_HHmmss (clipped by elzaer).mkv```
 
 Assign it to a command, and edit the two file location variables atop of the document.
 
